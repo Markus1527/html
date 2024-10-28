@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Lennundus ja Tehnoloogia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Veebilehe päis ja navigeerimislingid -->
+<header>
+    <h1>Lennunduse Uudised</h1>
+    <nav>
+        <ul>
+            <li><a href="#main-content">Avaleht</a></li>
+            <li><a href="#artiklid">Artiklid</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="main-content">
+    <!-- Artikkel lennundusest -->
+    <article>
+        <header>
+            <h2>Lennuki Dünaamika ja Uued Tehnoloogiad</h2>
+        </header>
+        <p><strong>Õhutakistus</strong> on üks olulisemaid faktoreid, mis mõjutab lennuki kiirust. Selle vähendamiseks kasutatakse spetsiaalseid materjale ja aerodünaamilisi disainielemente.</p>
+        <p><abbr title="Automatic Dependent Surveillance–Broadcast">ADS-B</abbr> on uusim lennujuhtimise tehnoloogia, mis võimaldab <mark>reaalajas</mark> lennuki jälgimist.</p>
+        <figure>
+            <img src="airplane.jpg" alt="Lennuk taevas">
+            <figcaption>Kaasaegne reisilennuk kõrgel taevas</figcaption>
+        </figure>
+        <blockquote cite="https://www.lennundusuudised.ee">
+            "Lennundustehnoloogia areng on üks kiiremaid ja olulisemaid protsesse kogu maailma transpordisektoris." – Lennundusuudised
+        </blockquote>
+    </article>
+
+    <!-- Multimeedia -->
+    <section>
+        <h3>Kuula Lennunduspodcasti</h3>
+        <audio controls>
+            <source src="lennundus-podcast.mp3" type="audio/mpeg">
+            Teie brauser ei toeta audio esitamist.
+        </audio>
+    </section>
+
+    <!-- Tabel lennunduse statistika kohta -->
+    <section>
+        <h3>Lennufirmade Statistika</h3>
+        <table>
+            <caption>Lennufirmade populaarsuse võrdlus</caption>
+            <colgroup>
+                <col style="background-color: #f2f2f2;">
+                <col style="background-color: #e0e0e0;">
+            </colgroup>
+            <thead>
+            <tr>
+                <th>Lennufirma</th>
+                <th>Reisijate arv (miljonites)</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Lennufirma A</td>
+                <td>45.6</td>
+            </tr>
+            <tr>
+                <td>Lennufirma B</td>
+                <td><del>30.2</del> <ins>33.5</ins></td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td>Kokku</td>
+                <td>79.1</td>
+            </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <!-- Vorm lennupileti broneerimiseks -->
+    <section>
+        <h3>Broneeri Lennupilet</h3>
+        <form action="submit_booking" method="post">
+            <fieldset>
+                <legend>Broneeringu Info</legend>
+                <label for="name">Nimi:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="flight-date">Lennu kuupäev:</label>
+                <input type="date" id="flight-date" name="flight-date" required><br>
+                <button type="submit">Broneeri</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- Lisainfo -->
+    <details>
+        <summary>Lisainfo Lennunduse Arengu Kohta</summary>
+        <p>Lennunduse valdkond on muutunud oluliselt viimase kümnendi jooksul. Kasutusele on võetud uued mootorite tehnoloogiad, mis vähendavad kütusekulu ja vähendavad heitgaase.</p>
+    </details>
+
+    <!-- Näide interaktiivsest graafikust -->
+    <section>
+        <h3>Lennuki Liikumine Kaardil</h3>
+        <canvas id="airplaneCanvas" width="500" height="400">
+            Teie brauser ei toeta kanvaselementi.
+        </canvas>
+    </section>
+</main>
+
+<!-- Kontaktinfo -->
+<footer id="kontakt">
+    <address>
+        <p>Kontakt: <a href="mailto:info@lennundusuudised.ee">info@lennundusuudised.ee</a></p>
+        <p>Telefon: +372 123 4567</p>
+    </address>
+</footer>
+
+<!-- Skript graafika jaoks -->
+<script>
+    const canvas = document.getElementById('airplaneCanvas');
+    const context = canvas.getContext('2d');
+    // Siia võiks tulla lennuki liikumise skript
+</script>
+
+</body>
+</html>
